@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <style type="text/css">
+
+
+label {
+  color: white;
+  width: 500px;
+  padding: 4px;
+    font-family: Verdana;
+  font-size: Medium;
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <title>UMFlix</title>
+</head>
+
+<body  background="/imagenes-UMFlix/fondoUMFlix.png" >
+
+       <table width="602" cellspacing="1" cellpadding="1" border="0" bgcolor="black"  align="center">
+
+        <tbody><tr align="center">
+            <td class="contenedor_cabezal">
+                <a href="">
+                    <img align=center src="/imagenes-UMFlix/UMFlix.jpg"  border=0>
+                </a>
+            </td>
+        <tr>
+            <td>
+                <br>
+                <div id="forms_container" align="center">
+                    <form action="/user/listByName" method="post">
+                        <label>   <b>Find movie by name</b> </label>
+                        <input type="text" name="findMovieByName" id="filmIdName" value="" />
+                        <input class="byNameButton" type="submit" value="GO"> </input>
+                    </form>
+                    <br>
+                    <form action="/user/listByActor" method="post">
+                        <label>   <b>Find movie by actor</b> </label>
+                        <input type="text" name="findMovieByActor" id="filmIdActor" value="" />
+                        <input class="byActorButton" type="submit" value="GO"> </input>
+                    </form>
+                    <br>
+                    <form action="/user/listByYear" method="post">
+                        <label>   <b>Find movie by year</b> </label>
+                        <input type="text" name="findMovieByYear" id="filmIdYear" value="" />
+                        <input class="byYearButton" type="submit" value="GO"> </input>
+                    </form>
+                    <br>
+                    <form action="/user/listByDirector" method="post">
+                        <label>   <b>Find movie by Director</b> </label>
+                        <input type="text" name="findMovieByDirector" id="filmIdDirector" value="" />
+                        <input class="byDirectorButton" type="submit" value="GO"> </input>
+                    </form>
+                    <br>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
